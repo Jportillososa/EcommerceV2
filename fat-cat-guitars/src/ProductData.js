@@ -1,14 +1,9 @@
 import React, { useEffect, useState } from "react";
 
 import "./pages/Home.css";
-// import Home from "./pages/Home";
-// import Header from "./components/Header";
-// import Footer from "./components/Footer";
-//result === data
-//setBackendData === setItems
 // ! Empty Array [] means this UseEffect will run once
 function App() {
-  const [error, setError] = useState(null);
+  // const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [backendData, setBackendData] = useState([]);
 
