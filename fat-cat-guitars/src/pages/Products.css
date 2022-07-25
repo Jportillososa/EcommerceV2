@@ -1,0 +1,35 @@
+/*--------CONTAINER FOR PRODUCTS IN FLEX */
+
+/* flex container */
+.product-filter {
+  display: flex;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  /* padding-left:20px; */
+}
+
+.product-filter h1 {
+  flex-grow: 1;
+}
+
+.sort {
+  display: flex;
+  padding: 20px;
+}
+
+.collection-sort {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px;
+}
+
+@media screen and (width: 375px) {
+  .sort {
+    align-self: flex-start;
+    padding: 0px;
+    min-width: 300px;
+  }
+}
