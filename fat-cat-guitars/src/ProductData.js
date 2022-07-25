@@ -19,7 +19,7 @@ function App() {
   // const [searchParam] = useState([""]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/products")
+    fetch("http://52.23.187.12:5000/api/products")
       .then((response) => response.json())
       .then(
         (data) => {
