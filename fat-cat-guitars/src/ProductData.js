@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import "./pages/Home.css";
 // ! Empty Array [] means this UseEffect will run once
 function App() {
-  // const [error, setError] = useState(null);
+  const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [backendData, setBackendData] = useState([]);
 

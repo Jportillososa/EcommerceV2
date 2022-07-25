@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import "../pages/Home.css";
 import { Outlet, Link } from "react-router-dom";
 
-export default function Header(props) {
-  const [isMobile, setIsMobile] = useState(false);
+export default function Header() {
+  // const [isMobile, setIsMobile] = useState(false);
   return (
     <div>
       <nav className="navbar">
@@ -31,19 +31,19 @@ export default function Header(props) {
               <Link to="/Contact">Contact</Link>
             </li>
           </ul>
-          <div className="toggle-button">
-            <span className="bar1"></span>
-            <span className="bar1"></span>
-            <span className="bar1"></span>
-            {isMobile ? (
-              <i className="fas fa-times"></i>
-            ) : (
-              <i className="fas fa-bars"></i>
-            )}
-          </div>
         </div>
       </nav>
       <Outlet />
     </div>
   );
 }
+//  <div className="toggle-button">
+//             <span className="bar1"></span>
+//             <span className="bar1"></span>
+//             <span className="bar1"></span>
+//             {isMobile ? (
+//               <i className="fas fa-times"></i>
+//             ) : (
+//               <i className="fas fa-bars"></i>
+//             )}
+//           </div>
