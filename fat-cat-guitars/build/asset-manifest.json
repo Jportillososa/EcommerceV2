@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c0c8fdbd.css",
+    "main.js": "/static/js/main.634c7ff1.js",
+    "static/media/concert.webp": "/static/media/concert.d9adcfe67f5537a2255d.webp",
+    "static/media/electric.jpg": "/static/media/electric.662a4c21187df64db4c0.jpg",
+    "index.html": "/index.html",
+    "main.c0c8fdbd.css.map": "/static/css/main.c0c8fdbd.css.map",
+    "main.634c7ff1.js.map": "/static/js/main.634c7ff1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c0c8fdbd.css",
+    "static/js/main.634c7ff1.js"
+  ]
+}
