@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-import Filter from "./components/Filter";
 import "./pages/Home.css";
 // import Home from "./pages/Home";
 // import Header from "./components/Header";
@@ -14,10 +13,10 @@ function App() {
   const [backendData, setBackendData] = useState([]);
 
   // set search query to empty string
-  const [q, setQ] = useState("");
+  // const [q, setQ] = useState("");
   // then we set search parameters
   // searching through guitars by electric/acoustic
-  const [searchParam] = useState([""]);
+  // const [searchParam] = useState([""]);
 
   useEffect(() => {
     fetch("http://localhost:5000/api/products")
