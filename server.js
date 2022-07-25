@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 // Urlencoded will allow us to extract the data from the form by
 // adding to the body property of the request.
 const path = require("path");
-app.use(express.static(path.join(__dirname + "/public")));
+app.use(express.static(path.join(__dirname + "fat-cat-guitars/public")));
 const port = process.env.PORT || 5000; // Says what port we will be using
 
 // connection to db
