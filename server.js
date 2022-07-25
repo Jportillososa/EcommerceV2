@@ -8,7 +8,8 @@ app.use(bodyParser.json());
 app.use(cors()); //this allows ALL domains to fetch (access) our API with no issues
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
+// Urlencoded will allow us to extract the data from the form by
+// adding to the body property of the request.
 const path = require("path");
 app.use(express.static(path.join(__dirname + "/public")));
 const port = process.env.PORT || 5000; // Says what port we will be using
