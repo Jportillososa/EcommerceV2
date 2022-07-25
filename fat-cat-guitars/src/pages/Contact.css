@@ -89,24 +89,43 @@ h2:after {
   background-color: #444444;
 }
 
-/* THIS IS TO MAKE FORM MOBILE FRIENDLY WHICH DOES WORK! */
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 820px) {
+  .contact-box {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-container {
+    position: relative;
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+  }
+}
+/* ipad*/
+/* @media screen and (width: 820px) {
   .contact-box {
     grid-template-columns: 1fr;
   }
 
-  .left {
-    height: 200px;
+  .contact-container {
+    position: relative;
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+  }
+} */
+/* Tablet */
+/* @media screen and (width: 820px) {
+  .contact-box {
+    grid-template-columns: 1fr;
   }
 
-  /*   .contact-container{
-    padding-left:10px;
-    padding-right:10px;
-   
-  } */
-}
-
-@media screen and (min-width: 1500px) {
+  .contact-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+} */
+/* THIS IS TO MAKE FORM MOBILE FRIENDLY WHICH DOES WORK! */
+/* Iphone responsive */
+@media screen and (max-width: 414px) {
   .contact-box {
     grid-template-columns: 1fr;
   }
@@ -117,7 +136,7 @@ h2:after {
 
   .contact-container {
     position: relative;
-    padding-top: 30vh;
-    padding-bottom: 50vh;
+    padding-top: 10vh;
+    padding-bottom: 20vh;
   }
 }
