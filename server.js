@@ -11,7 +11,6 @@ app.use(express.urlencoded({ extended: true }));
 // Urlencoded will allow us to extract the data from the form by
 // adding to the body property of the request.
 const path = require("path");
-app.use(express.static(path.join(__dirname + "fat-cat-guitars/public")));
 const port = process.env.PORT || 5000; // Says what port we will be using
 
 // connection to db
@@ -24,6 +23,15 @@ const db = mysql.createConnection({
   database: "fat_cat_guitars",
   port: "3306",
 });
+
+// app.use(express.static(path.join(__dirname + "fat-cat-guitars/public")));
+//
+app.use(express.static("fat-cat-guitars/build"));
+app.get("*", (req, res) =>
+  res.sendFile(
+    path.resolve(__dirname, "fat-cat-guitars", "build", "index.html")
+  )
+);
 // const query = "SELECT ProdImg";
 
 db.connect(function (error) {
