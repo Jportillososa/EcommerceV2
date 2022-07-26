@@ -12,7 +12,7 @@ function App() {
   // then we set search parameters
   // searching through guitars by electric/acoustic
   // const [searchParam] = useState([""]);
-
+  // connected EC2 instance in fetch
   useEffect(() => {
     fetch("http://52.23.187.12:5000/api/products")
       .then((response) => response.json())
