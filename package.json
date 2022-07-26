@@ -5,8 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js && cd fat-cat-guitars && npm start",
+    "start": "node server.js",
     "dev": "nodemon server",
+    "both": "node server.js && cd fat-cat-guitars && npm start",
     "build": "cd fat-cat-guitars && npm install && npm run build"
   },
   "author": "",
