@@ -11,7 +11,7 @@ app.use(cors()); //this allows ALL domains to fetch (access) our API with no iss
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 // !Urlencoded will allow us to extract the data from the form by
-//! adding to the body property of the request.
+//! adding to the body property of the request
 
 // app.use(express.static(path.join(__dirname + "fat-cat-guitars/public")));
 //
@@ -33,7 +33,7 @@ const db = mysql.createConnection({
   database: "fat_cat_guitars",
   port: "3306",
 });
-//! ^^ My lovely MySQL connection(This connection is on EC2 instance)
+//! ^^ My lovely MySQL connection(This connection is on RDS and server is on EC2)
 db.connect(function (error) {
   if (!!error) console.log(error);
   else console.log("MYSQL Database Connected!");

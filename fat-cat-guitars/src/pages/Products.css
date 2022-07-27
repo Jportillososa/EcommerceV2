@@ -1,35 +1,173 @@
-/*--------CONTAINER FOR PRODUCTS IN FLEX */
-
-/* flex container */
-.product-filter {
-  display: flex;
-  border: 2px solid black;
-  border-radius: 5px;
-  margin-top: 2vw;
-  margin-bottom: 2vw;
-  /* padding-left:20px; */
+/*.............section for PRODUCTS....................... */
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 100px;
+  margin: 100px;
+  text-align: center;
 }
 
-.product-filter h1 {
-  flex-grow: 1;
+.inventory img {
+  max-width: 100%;
+  min-width: 100px;
+  height: 350px;
 }
 
-.sort {
-  display: flex;
-  padding: 20px;
-}
-
-.collection-sort {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+.inventory {
+  font-size: 20px;
   padding: 10px;
+  background-color: white;
+  /* background-color: #3498db; */
+  color: rgb(0, 0, 0);
+  /* border: rgb(0, 0, 0) 5px solid; */
+  /* border-radius: 30px; */
+  /* height: 700px; */
+  text-align: center;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.6);
+
+  /* remove border and add picture */
 }
 
-@media screen and (width: 375px) {
-  .sort {
-    align-self: flex-start;
-    padding: 0px;
-    min-width: 300px;
+.inventory p {
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+
+  text-align: center;
+}
+
+@media screen and (min-width: 918px) {
+  .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .inventory h1 {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .mainH1 {
+    font-size: 6rem;
+    left: 20%;
+    /* padding:10%; */
+  }
+}
+@media screen and (min-width: 841px) {
+  .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .inventory h1 {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .mainH1 {
+    font-size: 8rem;
+    left: 30%;
+    /* padding:10%; */
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero-image {
+    min-height: 60vh;
+  }
+  .button {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    font-size: 6vw;
+    width: 40%;
+  }
+  .mainH1 {
+    font-size: 6rem;
+    left: 25%;
+  }
+}
+@media screen and (max-width: 761px) {
+  .hero-image {
+    min-height: 60vh;
+  }
+  .button {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    font-size: 6vw;
+    width: 40%;
+  }
+  .mainH1 {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 690px) {
+  .products {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 150px;
+  }
+  .inventory {
+    max-width: 300px;
+  }
+  .inventory h1 {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .hero-image {
+    min-height: 60vh;
+  }
+  .button {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    font-size: 6vw;
+    width: 40%;
+  }
+  .mainH1 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .products {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 50px;
+  }
+  .inventory {
+    min-width: 200px;
+  }
+  .inventory h1 {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .hero-image {
+    min-height: 50vh;
+  }
+  .button {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    font-size: 6vw;
+    width: 40%;
+  }
+  .mainH1 {
+    font-size: 50px;
+    left: 15%;
+  }
+}
+.filter {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem;
+  border-bottom: 0.1rem black solid;
+}
+.filter div {
+  flex: 1;
 }

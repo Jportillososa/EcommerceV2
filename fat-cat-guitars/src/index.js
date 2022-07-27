@@ -9,7 +9,8 @@ import Products from "./pages/Products";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 import "./pages/Home.css";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 export default function App() {
   return (
     <BrowserRouter>

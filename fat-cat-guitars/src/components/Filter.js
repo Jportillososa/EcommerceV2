@@ -1,11 +1,11 @@
 import React from "react";
-
+import "../pages/Products.css";
 function Filter() {
   return (
     <div className="filter">
       <div className="filter-result">Products</div>
       <div className="filter-sort">
-        Order
+        Order{" "}
         <select>
           <option>Latest</option>
           <option value="lowest">Lowest</option>
@@ -13,7 +13,7 @@ function Filter() {
         </select>
       </div>
       <div className="filter-type">
-        Filter
+        Filter{" "}
         <select>
           <option value="">All</option>
           <option value="Acoustic">Acoustic</option>

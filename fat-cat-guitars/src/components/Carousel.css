@@ -1,0 +1,30 @@
+.carousel-container {
+  width: 80%;
+  position: relative;
+  /* margin: 5em; */
+  margin: 0 auto;
+  padding: 50px;
+}
+.slide-container {
+  background-color: white;
+  text-align: center;
+  width: 400px;
+  padding: 10px;
+}
+
+.featured-products {
+  max-width: 100%;
+  min-width: 100px;
+  height: 350px;
+  margin: 0 auto;
+}
+.slide-text {
+  color: black;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+.product-price {
+  color: rgb(168, 42, 42);
+}

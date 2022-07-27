@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import "./pages/Home.css";
+import "./pages/Products.css";
 // ! Empty Array [] means this UseEffect will run once
 function App() {
   const [error, setError] = useState(null);
@@ -45,8 +46,10 @@ function App() {
                 <img key={data.ProdImg} src={data.ProdImg} alt="guitar" />
                 <div className="product-info">
                   <h3 key={data.ProdTitle}> {data.ProdTitle}</h3>
-                  <h4 key={data.ProdPrice}>{data.ProdPrice}</h4>
-                  <p key={data.ProdDesc}>{data.ProdDesc}</p>
+                  <h4 className="product-price" key={data.ProdPrice}>
+                    ${data.ProdPrice}
+                  </h4>
+                  {/* <p key={data.ProdDesc}>{data.ProdDesc}</p> */}
                   <button>Add to Cart</button>
                 </div>
               </div>
