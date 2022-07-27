@@ -31,7 +31,7 @@ export default function Header() {
           </div>
         </figure>
         <div>
-          <div className={hamburgerOpen ? "navbar-links expanded" : "navbar"}>
+          <div className={hamburgerOpen ? "navbar" : "navbar-links expanded"}>
             {/* <div className="navbar-links"> */}
             <ul>
               <li>
