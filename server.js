@@ -27,10 +27,10 @@ app.get("*", (req, res) =>
 const mysql = require("mysql");
 
 const db = mysql.createConnection({
-  host: "fat-cat-guitars-db.cpwxit77hftv.us-east-1.rds.amazonaws.com",
-  user: "admin",
-  password: "97Portillo99",
-  database: "fat_cat_guitars",
+  host: process.env.REACT_APP_HOST,
+  user: process.env.REACT_APP_USER,
+  password: process.env.REACT_APP_PASSWORD,
+  database: process.env.REACT_APP_DATABASE,
   port: "3306",
 });
 //! ^^ My lovely MySQL connection(This connection is on RDS and server is on EC2)
