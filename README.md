@@ -8,7 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-## To npm start - > cd to ...\fat-cat-guitars and then `npm start`
+## *** To load project in localhost - > cd to ...\fat-cat-guitars and then `npm start` ***
 
 ### `npm start`
 
